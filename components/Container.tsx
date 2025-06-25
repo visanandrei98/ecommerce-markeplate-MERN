@@ -1,18 +1,18 @@
-import React from 'react'
-import { cn } from '@/lib/utils'
+import { cn } from "@/lib/utils";
+import React from "react";
 
 const Container = ({
-    children, 
-    className,
-}:{
-    children: React.ReactNode;
-    className?: string;
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
 }) => {
   return (
-    <div className={cn("mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8", className)}>{children}
+    <div className={cn("max-w-screen-xl mx-auto px-4", className)}>
+      {children}
     </div>
-);
-  
-}
+  );
+};
 
-export default Container
+export default Container;

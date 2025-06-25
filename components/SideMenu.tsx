@@ -1,13 +1,11 @@
-import React from "react";
-import { FC } from "react";
+import React, { FC } from "react";
 import Logo from "./Logo";
 import { X } from "lucide-react";
-import Link from "next/link";
 import { headerData } from "@/constants/data";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import SocialMedia from "./SocialMedia";
 import { useOutsideClick } from "@/hooks";
-
 interface SidebarProps {
   isOpen: boolean;
   onClose: () => void;
@@ -18,7 +16,7 @@ const SideMenu: FC<SidebarProps> = ({ isOpen, onClose }) => {
   const sidebarRef = useOutsideClick<HTMLDivElement>(onClose);
   return (
     <div
-      className={`fixed inset-y-0 h-screen left-0 z-50/50 w-72 bg-black shadow-xl ${
+      className={`fixed inset-y-0 h-screen left-0 z-50 w-full bg-black/50 text-white/70 shadow-xl ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } hoverEffect`}
     >
@@ -35,6 +33,7 @@ const SideMenu: FC<SidebarProps> = ({ isOpen, onClose }) => {
             <X />
           </button>
         </div>
+
         <div className="flex flex-col space-y-3.5 font-semibold tracking-wide">
           {headerData?.map((item) => (
             <Link
