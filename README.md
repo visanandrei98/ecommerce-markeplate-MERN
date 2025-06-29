@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ ShopCartYT – Full-Stack E-commerce App
 
-## Getting Started
+Live site: [https://ecommerce-ts-nextjs.vercel.app](https://ecommerce-ts-nextjs.vercel.app)
+![image](https://github.com/user-attachments/assets/79193076-1aa3-4f8f-b6ea-f4751f1e298a)
 
-First, run the development server:
 
-```bash
+A high-performance, full-stack e-commerce platform built with the latest tools in the JavaScript ecosystem. This project demonstrates scalable architecture, dynamic CMS integration, and real payment processing using Stripe.
+
+---
+
+## 🔧 Tech Stack
+
+### 🧑‍💻 Frontend
+- **Next.js 14** (App Router, Server Components)
+- **TypeScript** (strict typing)
+- **Tailwind CSS** (utility-first CSS)
+- **Shadcn/UI** (accessible component library)
+- **Radix UI** (UI primitives for dialogs, tooltips etc.)
+- **Zustand** (state management for cart + wishlist)
+- **Day.js** (date/time formatting)
+- **Embla Carousel** (product sliders)
+
+### 🧠 CMS & Content
+- **Sanity.io** (headless CMS)
+- **Portable Text** (rich blog/article formatting)
+- **Sanity Image CDN** (fast asset delivery)
+
+### 💳 Payments & Backend
+- **Stripe** (secure checkout)
+- **Stripe Webhooks** (order handling)
+- **Server Actions** (Next.js backend logic)
+- **Middleware** (request-level logic)
+
+### 🧪 Tooling & Dev Experience
+- **ESLint** (Airbnb-style linting)
+- **Prettier** (code formatting)
+- **Turbopack** (dev performance)
+- **PostCSS** (Tailwind config)
+- **Vercel** (deploy & hosting)
+
+---
+
+## ✨ Features
+
+- 🛒 Cart & Wishlist (Zustand + LocalStorage)
+- 🔍 Product filtering by category
+- 💳 Stripe Checkout & Order confirmation
+- 🖼 Dynamic product images (Sanity Image CDN)
+- 🧾 Blog articles (fetched from Sanity)
+- 📦 Responsive UI with dynamic routing
+- 🌐 SEO-friendly slugs and routes
+
+---
+## Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
